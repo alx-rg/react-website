@@ -1,12 +1,12 @@
 import './App.css';
-import Title from './Title';
+import Title from '../Title/Title';
 import { Outlet } from 'react-router-dom';
-import POPOSList from './POPOSList';
-import Footer from './Footer';
+// import POPOSList from './components/POPOSList/POPOSList';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (
-    <div>
+    <div className='main'>
       <Title />
       <Outlet />
       <Footer />

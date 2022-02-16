@@ -1,7 +1,7 @@
 import React from 'react';
-import POPOSSpace from './POPOSSpace';
+import POPOSSpace from '../POPOSSpace/POPOSSpace';
 import './POPOSList.css';
-import data from './sfpopos-data.json'
+import data from '../../sfpopos-data.json'
 
 function POPOSList() {
 
@@ -10,14 +10,16 @@ function POPOSList() {
     const { title, address, images, hours } = obj
   
     return (
-      <POPOSSpace
-        id={i}
-        name={title}
-        address={address}
-        image={images[0]}
-        key={title}
-        hours={hours}
-      />
+      <div className='POPOSList'>
+        <POPOSSpace
+          id={i}
+          name={title}
+          address={address}
+          image={images[0]}
+          key={title}
+          hours={hours}
+          />
+      </div>
     )
   })
 
