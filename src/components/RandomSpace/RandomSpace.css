@@ -19,7 +19,7 @@
   animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  background-color: #79e854;
+  background-color: #e88854;
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
   color: #000000;
@@ -28,7 +28,7 @@
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
-  line-height: 2.5rem;
+  line-height: 4rem;
   padding: .75rem 1.65rem;
   position: relative;
   text-align: center;
@@ -50,18 +50,21 @@
 }
 
 .RandomSpace:after {
+  font-family: 'Teko';
   content: 'Random';
+  font-size: 1.25em;
   position: absolute;
   border: 3px solid #000000;
-  bottom: 4px;
-  left: 4px;
+  border-radius: 5px;
+  bottom: -3px;
+  left: -3px;
   width: calc(100% - 1px);
   height: calc(100% - 1px);
 }
 
 .RandomSpace:hover:after {
-  bottom: 2px;
-  left: 2px;
+  bottom: 4px;
+  left: 4px;
 }
 
 @media (min-width: 768px) {

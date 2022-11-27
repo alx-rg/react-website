@@ -1,41 +1,95 @@
 /*  src/Title.css  */
+@import url('https://fonts.googleapis.com/css?family=Teko');
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .Title {
+  
   box-sizing: border-box;
   width: 100%;
-  display: flexbox;
   justify-content: center;
   align-items: baseline;
   padding: 1em;
   margin-bottom: 2em;
   background-color: rgba(0, 0, 0, 0.329);
   color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .Title h1 {
   color: aquamarine;
+  font-family: 'Caveat', 'Courier New', Courier, monospace;
+}
+#title2
+{
+  margin-top:-50px;
 }
 
-.Title h1::before {
-  content: 'SAN FRANCISCO Privately Owned Public Open Spaces';
-  
+#title1
+{
+  white-space:nowrap;
+  overflow:hidden;
+  -webkit-animation: title1animation 20s steps(50, end) 0s infinite;
+  animation: title1animation 20s steps(50, end) 0s infinite;
 }
-.Title h1::after {
-  content: 'SFPOPS';
+@keyframes title1animation{
+		    
+		    from { width: 0;}
+		    37%{width:25em;}
+		    49%{width:0;}
+		    100%{width:0;}
+		}
+
+		@-webkit-keyframes title1animation{
+		    from { width: 0;}
+		    37%{width:25em;}
+		    49%{width:0;}
+		    100%{width:0;}
+		}
+#title2
+{
+  opacity: 0;
+			width: 25em;
+		    white-space:nowrap;
+		    overflow:hidden;
+		    -webkit-animation: title2animation 20s steps(50, end) 10s infinite;
+
+		    animation: title2animation 20s steps(50, end) 10s infinite;
 }
+@keyframes title2animation{
+		    
+		    from { width: 0; opacity:1; }
+		    37%{width:25em;opacity:1; }
+		    49%{width:0;opacity:1; }
+		    100%{width:0;opacity:1; }
+		}
+
+		@-webkit-keyframes title2animation{
+		    from { width: 0; opacity:1; }
+		    37%{width:25em;opacity:1; }
+		    49%{width:0;opacity:1; }
+		    100%{width:0;opacity:1; }
+		}
 
 .Title-Subtitle {
   color: #79e854;
 }
 
 .Title a {
+  font-family: 'Teko';
+  font-size: 1.5em;
   display: inline-block;
   padding: 0.5em 1em;
-  color: rgba(187, 187, 187, 0.835);
-  font-weight: italic;
+  color: rgba(255, 170, 0, 0.835);
   text-decoration: none;
 }
 
 .Title .nav-link-active {
-  color: #fff;
+  color: rgb(0, 0, 0);
   border-bottom: 2px solid;
 } 
 
@@ -44,4 +98,10 @@
 	flex-direction: row;
   text-align: center;
 	margin: auto;
+  margin-left: 10px;
+}
+
+.Header-container :nth-child(2) {
+  margin-left: 10px;
+  margin-right: 30px;
 }

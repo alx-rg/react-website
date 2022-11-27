@@ -3,4 +3,6 @@
   background-color: rgba(0, 0, 0, 0.329);
   color: #fff;
   padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 } 
