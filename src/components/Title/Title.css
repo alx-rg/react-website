@@ -7,8 +7,19 @@
   align-items: baseline;
   padding: 1em;
   margin-bottom: 2em;
-  background-color: rgb(192, 45, 26);
+  background-color: rgba(0, 0, 0, 0.329);
   color: #fff;
+}
+.Title h1 {
+  color: aquamarine;
+}
+
+.Title h1::before {
+  content: 'SAN FRANCISCO Privately Owned Public Open Spaces';
+  
+}
+.Title h1::after {
+  content: 'SFPOPS';
 }
 
 .Title-Subtitle {

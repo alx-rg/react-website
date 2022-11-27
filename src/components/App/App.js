@@ -7,9 +7,18 @@ import Footer from '../Footer/Footer';
 function App() {
   return (
     <div className='main'>
-      <Title />
+      
+      <div className='header'>
+        <Title />
+      </div>
+      <div className='wrapper'>
+
       <Outlet />
+      </div>
+      <div className='page-footer'>
+
       <Footer />
+      </div>
     </div>
   );
 }

@@ -1,4 +1,24 @@
+
+@keyframes shake {
+  20%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  30%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  
+  40%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+}
+
+
 .RandomSpace {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   background-color: #79e854;
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
@@ -8,19 +28,21 @@
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
-  line-height: 1.75rem;
+  line-height: 2.5rem;
   padding: .75rem 1.65rem;
   position: relative;
   text-align: center;
   text-decoration: none #000000 solid;
+  border-radius: 5px 5px 5px 5px;
   width: 100%;
-  max-width: 460px;
+  max-width: 90px;
   position: relative;
   cursor: pointer;
-  transform: rotate(-2deg);
+  transform: rotate(-4deg);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+
 }
 
 .RandomSpace:focus {
@@ -28,9 +50,9 @@
 }
 
 .RandomSpace:after {
-  content: '';
+  content: 'Random';
   position: absolute;
-  border: 1px solid #000000;
+  border: 3px solid #000000;
   bottom: 4px;
   left: 4px;
   width: calc(100% - 1px);
@@ -48,3 +70,4 @@
     font-size: 1.25rem;
   }
 }
+

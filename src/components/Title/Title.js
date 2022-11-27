@@ -8,7 +8,7 @@ const Title = () => {
     <div className="Title">
       <header>
         <div className='Header-title'>
-          <h1>SFPOPOS</h1>
+          <h1></h1>
         </div>
         <div className='Header-container'>
           <NavLink 
