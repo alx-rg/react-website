@@ -21,6 +21,7 @@
 	padding: 1rem;
 	text-align: left;
 	transition: 1000ms;
+	border-radius: 0px;
 }
 .POPOSSpace:hover h1 {
   display: block;
@@ -30,28 +31,26 @@
 	font-size: 1.5em;
 	margin-left: 1.5rem;
   margin-top: 1.8rem;
-	background-color: rgb(250, 250, 250);
+	background-color: rgb(255, 177, 193);
 	padding: 1rem;
 	text-align: left;
+	border-radius: 25px;
 }
-
-
 
 .POPOSSpace > img {
   width: 100%;
   height: auto;
 }
 
-
 img {
-  border-radius: 50%;
+  border-radius: 5%;
 	transition: 500ms;
 }
 img:hover {
-  border-radius: 0%;
+  border-radius: 50%;
+	filter: grayscale(100%);
+
 }
-
-
 
 .POPOSSpace .POPOSSpace-info {
 	position: absolute;
@@ -64,4 +63,11 @@ img:hover {
 	display: inline-block;
 	padding: 0.25em 0.5em;
 	background-color: rgba(255, 255, 255, 0.9);
+	transition: 1000ms;
+}
+.POPOSSpace:hover .POPOSSpace-info div {
+	display: inline-block;
+	padding: 0.25em 0.5em;
+	font-size: 12px;
+	background-color: rgba(150, 207, 241, 0.9);
 }

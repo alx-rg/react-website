@@ -12,6 +12,7 @@
 }
 
 .POPOSDetails .POPOSDetails-title {
+	flex: 2;
 	font-size: 2em;
 	margin: 0;
 }
